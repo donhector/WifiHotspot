@@ -2,13 +2,17 @@
 .SYNOPSIS
 
 	Script to turn your PC's Wifi adapter into a personal hotspot that shares your PC's Internet connection.
-	This allows you to connect additional WIFI devices to your network without requiring a wireless router or access point.
-	Basically, your PC will act as the WIFI router :-)
+	This allows you to connect additional WIFI devices to your network without requiring a wireless router 
+	or access point. Basically, your PC will act as the WIFI router :-)
 
-	This is handy when your only connection point is wired and you want to also connect a WIFI device such as your mobile phone or tablet,
-	or when depite having WIFI available the network only allows one device per user. These are specially common scenarios in hotels.
+	This is handy when your only connection point is wired and you want to also connect a WIFI device such 
+	as your mobile phone or tablet,	or when depite having WIFI available, the network only allows one device 
+	per user. 
+	
+	These are common scenarios when on the move and stying in hotels.
 
-	NOTE: This functionality is only supported on Win 7 and later, and on certain Wifi adapters. The script will check if your adapter is supported.
+	NOTE:	This functionality is only supported on Win 7 and later, and only by certain Wifi adapters. 
+		The script will check if your adapter is supported.
 
 .EXAMPLE
 
@@ -157,7 +161,7 @@ Function StartICS($publicAdapter, $privateAdapter)
 {
 	$public = 0
 	$private = 1
-	# Enabling Internet Connection Sharing (ICS) on the public connection and allowing it to share via the internal adapters
+	# Enabling Internet Connection Sharing (ICS) on the public connection via the the internal private adapter
 	Write-Host "Starting ICS on the selected adapter... " -nonewline
 	If($publicAdapter.SharingEnabled -eq $false) { $publicAdapter.SharingConfigurationObject.EnableSharing($public) }
 	If($privateAdapter.SharingEnabled -eq $false) { $privateAdapter.SharingConfigurationObject.EnableSharing($private) }
