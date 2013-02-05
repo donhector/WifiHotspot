@@ -8,7 +8,7 @@
 	This is handy when your only connection point is wired and you want to also connect a WIFI device such as your mobile phone or tablet,
 	or when depite having WIFI available the network only allows one device per user. These are specially common scenarios in hotels.
 	
-	NOTE: This functionality is only supported on Win 7 and later, and on certain Wifi adapters...
+	NOTE: This functionality is only supported on Win 7 and later, and on certain Wifi adapters. The script will check if your adapter is supported.
 
 .EXAMPLE
 
