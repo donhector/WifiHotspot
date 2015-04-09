@@ -1,4 +1,4 @@
 WifiHotspot
 ===========
 
-Powershell script for turning on your wifi adapter into a personal hotspot
+Powershell script for turning your wifi adapter into a personal hotspot
