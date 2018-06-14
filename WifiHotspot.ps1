@@ -21,8 +21,7 @@
 	WifiHotspot show
 
 .AUTHOR
-	Hector Molina
-	donhector@gmail.com
+	donhector
 
 .VERSION
 	1.0
